@@ -1,11 +1,11 @@
 import './CoreConcepts.css'
 
-function CoreConcepts(props) {
+function CoreConcepts({title, desc, img}) {
     return (
       <li>
-        <img src={props.image} alt={props.title} />
-        <h3>{props.title}</h3>
-        <p>{props.desc}</p>
+        <img src={img} alt={title} />
+        <h3>{title}</h3>
+        <p>{desc}</p>
       </li>
     )
 }
